@@ -1,0 +1,14 @@
+Custom Personal Portfolio License
+Copyright (c) 2025 Sinikdho
+
+This source code is part of Sinikdho's personal portfolio website. You are not allowed to copy, reproduce, distribute, or use any portion of this code without explicit permission from the owner.
+
+Permissions:
+✔️ You may view the code if granted access.
+❌ You may NOT use this code for your own portfolio or projects.
+❌ You may NOT redistribute or publish this code in any public space.
+
+This project is licensed only for educational viewing by authorized persons and is NOT open-source.
+
+For permissions or collaboration requests, please contact:
+📧 mdsinikdho94@@gmail.com (or via social profiles)

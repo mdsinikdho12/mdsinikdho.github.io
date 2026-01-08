@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="yXfKSEI1OCGHGVdi70Zb21nIAoVEc2qrJPvFCav2LxI" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Page Title -->
+    <title>Sinikdho | Web Developer & Programmer Portfolio</title>
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="I'm Sinikdho, a passionate web developer and programmer. Explore my portfolio to see my projects, skills, and contact information." />
+
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="Sinikdho, md sinikdho, Md sinikdho, code with sinikdho, web developer, portfolio, programmer, HTML, CSS, JavaScript, Python, frontend developer, Bangladesh" />
+
+    <!-- Viewport (Mobile Responsive) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Author -->
+    <meta name="author" content="Sinikdho" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!--  Open Graph Tags (Facebook, LinkedIn, etc.)html-->
+    <meta property="og:title" content="Sinikdho | Web Developer & Programmer" />
+    <meta
+      property="og:description"
+      content="Explore Sinikdho's developer portfolio, projects, and skills. Let's build something awesome together!" />
+    <meta
+      property="og:image"
+      content=" https://mdsinikdho.netlify.app/images/preview.jpg" />
+    <meta property="og:url" content=" https://mdsinikdho.netlify.app" />
+    <meta property="og:type" content="website" />
+
+    <!-- Tailwindcss -->
+
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet" />
+
+    <!-- Aso -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#0B1221]">
+    <!-- navbar start -->
+    <nav class="w-full bg-transparent shadow-xl" x-data="{ open: false }">
+      <div
+        class="max-w-[1200px] h-[60px] mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center">
+          <img src="images/logo1.png" alt="Logo" class="h-10" />
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-8 items-center">
+          <a
+            href="#home"
+            class="font-[Hind_Siliguri] text-gray-500 font-medium hover:text-white"
+            >হোম</a
+          >
+          <a
+            href="#about"
+            class="font-[Hind_Siliguri] text-gray-500 font-medium hover:text-white"
+            >পরিচিতি</a
+          >
+          <a
+            href="#contact.html"
+            class="font-[Hind_Siliguri] text-gray-500 font-medium hover:text-white"
+            >যোগাযোগ</a
+          >
+          <a
+            href="#project"
+            class="font-[Hind_Siliguri] text-gray-500 font-medium hover:text-white"
+            >প্রেজেক্ট</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button
+            @click="open = !open"
+            class="text-white focus:outline-none text-2xl">
+            <svg
+              x-show="!open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 8h16M4 16h16" />
+            </svg>
+            <svg
+              x-show="open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div x-show="open" class="md:hidden bg-[#0B1221] px-6 py-4 space-y-4">
+        <a
+          href="#home"
+          class="block text-gray-300 font-[Hind_Siliguri] hover:text-white"
+          >হোম</a
+        >
+        <a
+          href="#about"
+          class="block text-gray-300 font-[Hind_Siliguri] hover:text-white"
+          >পরিচিতি</a
+        >
+        <a
+          href="contact.html"
+          class="block text-gray-300 font-[Hind_Siliguri] hover:text-white"
+          >যোগাযোগ</a
+        >
+        <a
+          href="#project"
+          class="block text-gray-300 font-[Hind_Siliguri] hover:text-white"
+          >প্রেজেক্ট</a
+        >
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- banner part -->
+    <section>
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between mt-[60px]">
+        <!-- Text content -->
+        <div
+          class="text-contain mb-8 md:mb-0 px-4 min-h-[150px] overflow-hidden"
+          data-aos="zoom-out-right">
+          <p
+            class="wel-text font-[Hind_Siliguri] text-2xl sm:text-3xl md:text-4xl font-bold text-white min-h-[60px]">
+            <span
+              id="typed-text"
+              class="inline-block border-r-2 border-white pr-1 animate-pulse break-words"></span>
+          </p>
+
+          <!-- Icons -->
+          <div class="icon flex flex-wrap items-center mt-4 gap-3 sm:gap-4">
+            <a
+              href="https://www.linkedin.com/in/md-ferdousmahmud/"
+              target="_blank">
+              <img
+                src="https://img.icons8.com/color/48/linkedin.png"
+                alt="linkedin"
+                class="w-8 sm:w-10" />
+            </a>
+            <a href="https://github.com/mdsinikdho12" target="_blank">
+              <img
+                src="images/icons8-github-50.png"
+                alt="github"
+                class="w-8 sm:w-10" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Fixed image on the right side -->
+        <div class="img-container" data-aos="fade-left">
+          <img
+            src="images/SINIKDHO-GITpng.png"
+            alt="Snigdho"
+            class="w-[300px] sm:w-[250px] md:w-[300px] lg:w-[400px] xl:w-[500px] h-auto object-contain" />
+        </div>
+      </div>
+    </section>
+    <!-- banner part end -->
+
+    <!-- About us  -->
+    <section class="mx-auto px-4" id="about">
+      <h2
+        class="text-white font-bold text-5xl text-center mt-7 font-[Hind_Siliguri]"
+        data-aos="fade-up">
+        আমার সম্পর্কে <span class="text-[#2196f3]">কিছু কথা</span>
+      </h2>
+      <div
+        class="about-content grid grid-cols-1 lg:grid-cols-2 justify-items-center mt-5">
+        <div class="about-img flex flex-col w-full items-center">
+          <dotlottie-wc
+            src="https://lottie.host/03916915-d11a-4e2e-9240-70956f6f9a50/2VcssugE8C.lottie"
+            autoplay
+            loop
+            data-aos="fade-up"
+            class="w-[100px] h-auto absolute me-[130px] mt-9"></dotlottie-wc>
+          <img
+            src="images/SINIKDHO-GITpng.png"
+            alt="about-image"
+            class="w-64 h-auto rounded-2xl border-r-2 border-r-[#2196f3]"
+            data-aos="fade-up" />
+
+          <div
+            class="flex justify-between gap-3 text-center mt-6"
+            data-aos="fade-up">
+            <!-- Completed Projects -->
+            <div>
+              <h2 class="text-5xl text-white font-bold">
+                <span id="completed">0</span
+                ><span class="text-[#2196f3]">+</span>
+              </h2>
+              <p class="text-gray-400 mt-2 text-lg">Completed Projects</p>
+            </div>
+
+            <!-- Client Satisfaction -->
+            <div>
+              <h2 class="text-5xl text-white font-bold">
+                <span id="satisfaction">0</span
+                ><span class="text-[#2196f3]">%</span>
+              </h2>
+              <p class="text-gray-400 mt-2 text-lg">Client Satisfaction</p>
+            </div>
+
+            <!-- Years of Experience -->
+            <div>
+              <h2 class="text-5xl text-white font-bold">
+                <span id="experience">0</span
+                ><span class="text-[#2196f3]">+</span>
+              </h2>
+              <p class="text-gray-400 mt-2 text-lg">Years of Experience</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="about-text text-white font-medium font-[Hind_Siliguri] mt-7 border-l-amber-300 border-l-2 p-3"
+          data-aos="zoom-in-up">
+          <p>
+            আমার নাম মো:ফেরদৌস মাহমুদ স্নিগ্ধ, সবাই আমাকে স্নিগ্ধ বলে চিনে ,আমি
+            পড়াশোনা করতেছি কুড়িগ্রাম পলিটেকনিক ইনিস্টিটিউট এ “কম্পিউটার সাইন্স
+            এন্ড টেকনোলজি” বিভাগ এ .ছোটবেলা থেকে প্রযুক্তির প্রতি অনেক টান ছিল
+            আগে সপ্ন দেখতাম বড় হয়ে সফটওয়্যার ইঞ্জিনিয়ার হবো ,এখন এই ফিল্ডে এসে
+            বুঝতে পারলাম বিষয়টা অতটাও সহজ না! কিন্ত আমি মনে করি মানুষ পারে না
+            এমন কিছুই নাই ! চাইলেই সব সম্ভব .আমি ডে বাই ডে নিজের স্কিল
+            ডেভলপমেন্ট করার চেষ্ঠা করতেছি ,এই পর্যন্ত আমি পাইথন প্রোগ্রামিং
+            ল্যাঙ্গুয়েজ দিয়ে কয়েটি প্রোজেক্ট বানিয়েছি এবং এইচটিএমএল,সিএস এস
+            ,জভাস্কিপ্ট দিয়ে কয়েকটি পোর্টফোলিও ওয়েবসাইট বানিয়েছি । এই ছোট
+            বড় প্রোজেক্ট করতে আমাকে অনেক সমস্যার সম্মুখীন হতে হয়েছে যা আমি
+            পরবর্তীতে সমাধানও বের করে ফেলি ,এই প্রোজেক্ট গুলো করতে আমি অনেক
+            টেকনোলজি এবং অভিজ্ঞতা অর্জন করি ।
+          </p>
+          <p class="end-text mt-6 text-[20px]">
+            মো:ফেরদৌস মাহমুদ স্নিগ্ধ
+            <br />
+            প্রতিষ্ঠাতা
+            <a
+              href="https://www.facebook.com/profile.php?id=100094052380849"
+              target="_blank"
+              title="এখানে ক্লিক করলে আমার ফেসবুক পেজ দেখতে পারবেন"
+              class="text-gray-700"
+              >-Code With Sinikdho</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About us  -->
+
+    <!-- project part  -->
+    <section
+      id="project"
+      class="mt-[190px] overflow-x-hidden bg-[#0f172a] py-20">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-[#2196f3] font-bold text-5xl text-center mt-7 font-[Hind_Siliguri]"
+          data-aos="fade-up">
+          আমার করা কিছু <span class="text-white">প্রোজেক্ট</span>
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16 items-center">
+          <!-- Left: Lottie Animation -->
+          <div data-aos="zoom-in-up">
+            <dotlottie-wc
+              src="https://lottie.host/38f68a49-85ef-4bbb-9647-bb780beeda77/989vdCVQed.lottie"
+              autoplay
+              loop></dotlottie-wc>
+          </div>
+
+          <!-- Right: Description Paragraph -->
+          <p
+            data-aos="zoom-in-up"
+            class="border-l-4 border-blue-600 rounded-2xl p-6 text-2xl font-[Hind_Siliguri] text-white font-medium leading-relaxed bg-[#1e293b] shadow-lg">
+            একজন ডেভেলপারের জন্য প্রোজেক্ট করা শুধুমাত্র শেখার একটি অংশ নয়, বরং
+            বাস্তব অভিজ্ঞতা অর্জনের অন্যতম কার্যকরী উপায়। একটি প্রোজেক্ট করতে
+            গেলে অনেক সমস্যার সম্মুখীন হতে হয়, অনেক প্রবলেম সলভিং, ডিবাগিং করতে
+            হয় যা একজন
+            <span class="bg-yellow-400 text-black px-2 py-1 rounded"
+              >লার্নারকে</span
+            >
+            অনেক অভিজ্ঞতা দেয়, সেই সাথে বিভিন্ন নতুন নতুন টেকনোলজির সাথে পরিচয়
+            করিয়ে দেয়।
+          </p>
+        </div>
+
+        <!-- Project Cards Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
+          <!-- Project 1 -->
+          <div
+            class="bg-[#1e293b] rounded-2xl border border-[#2196f3] p-6 shadow-lg"
+            data-aos="fade-up">
+            <h3
+              class="text-[#2196f3] font-bold text-2xl text-center font-[Hind_Siliguri] mb-4">
+              PH-Tub-Api-project
+            </h3>
+            <img
+              src="images/phtube.png"
+              alt="PH Tub Project Screenshot"
+              class="rounded-lg mb-5 mx-auto" />
+            <div class="flex justify-center gap-4">
+              <a
+                href="https://github.com/mdsinikdho12/PH-Tub-Api-project-"
+                target="_blank"
+                class="text-white font-semibold px-5 py-2 rounded-xl ring-2 ring-blue-500 bg-blue-600 hover:bg-blue-700 transition duration-300 shadow-md animate-bounce">
+                GitHub Repositories
+              </a>
+              <a
+                href="https://phtubesinikdho.netlify.app/"
+                target="_blank"
+                class="text-white font-semibold px-5 py-2 rounded-xl border border-blue-500 bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-md animate-bounce">
+                Live Link
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-[#1e293b] rounded-2xl border border-[#2196f3] p-6 shadow-lg"
+            data-aos="fade-up">
+            <h3
+              class="text-[#2196f3] font-bold text-2xl text-center font-[Hind_Siliguri] mb-4">
+              HVAC Landing
+              <span class="bg-yellow-300 text-black px-2 py-1 rounded"
+                >Page</span
+              >
+            </h3>
+            <img
+              src="images/hvc.png"
+              alt="HVAC Landing Page"
+              class="rounded-lg mb-5 mx-auto" />
+            <div class="flex justify-center gap-4">
+              <a
+                href="https://github.com/mdsinikdho12/HVAC-LANDING-PAGE--"
+                target="_blank"
+                class="text-white font-semibold px-5 py-2 rounded-xl ring-2 ring-blue-500 bg-blue-600 hover:bg-blue-700 transition duration-300 shadow-md animate-bounce">
+                GitHub Repositories
+              </a>
+              <a
+                href="https://hvacprojectcodewithsinikdho.netlify.app/"
+                target="_blank"
+                class="text-white font-semibold px-5 py-2 rounded-xl border border-blue-500 bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-md animate-bounce">
+                Live Link
+              </a>
+            </div>
+          </div>
+          <!-- hideen project -->
+          <div
+            class="hidden-Project hidden fade-in grid grid-cols-1 lg:grid-cols-2 gap-7 w-full col-span-full">
+            <!-- Project 3 -->
+            <div
+              class="bg-[#1e293b] rounded-2xl border border-[#2196f3] p-6 shadow-lg"
+              data-aos="fade-up">
+              <h3
+                class="text-[#2196f3] font-bold text-2xl text-center font-[Hind_Siliguri] mb-4">
+                ToDo List
+                <span class="bg-yellow-300 text-black px-2 py-1 rounded"
+                  >App</span
+                >
+              </h3>
+              <img
+                src="images/todo.png"
+                alt="HVAC Landing Page"
+                class="rounded-lg mb-5 mx-auto" />
+              <div class="flex justify-center gap-4">
+                <a
+                  href="https://github.com/mdsinikdho12/Todolist-app?"
+                  target="_blank"
+                  class="text-white font-semibold px-5 py-2 rounded-xl ring-2 ring-blue-500 bg-blue-600 hover:bg-blue-700 transition duration-300 shadow-md animate-bounce">
+                  GitHub Repositories
+                </a>
+                <a
+                  href="https://hvacprojectcodewithsinikdho.netlify.app/"
+                  target="_blank"
+                  class="text-white font-semibold px-5 py-2 rounded-xl border border-blue-500 bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-md animate-bounce">
+                  Live Link
+                </a>
+              </div>
+            </div>
+
+            <!-- project -4 -->
+            <div
+              class="bg-[#1e293b] rounded-2xl border border-[#2196f3] p-6 shadow-lg"
+              data-aos="fade-up">
+              <h3
+                class="text-[#2196f3] font-bold text-2xl text-center font-[Hind_Siliguri] mb-4">
+                USD-to-BDT-
+                <span
+                  class="border-b-2 border-b-yellow-300 text-white px-2 py-1"
+                  >Converter</span
+                >
+              </h3>
+              <img
+                src="images/imagepng.png"
+                alt="HVAC Landing Page"
+                class="rounded-lg mb-5 mx-auto" />
+              <div class="flex justify-center gap-4">
+                <a
+                  href="https://github.com/mdsinikdho12/USD-to-BDT-Converter"
+                  target="_blank"
+                  class="text-white font-semibold px-5 py-2 rounded-xl ring-2 ring-blue-500 bg-blue-600 hover:bg-blue-700 transition duration-300 shadow-md animate-bounce">
+                  GitHub Repositories
+                </a>
+                <a
+                  href="https://codewithsinikdho.netlify.app/"
+                  target="_blank"
+                  class="text-white font-semibold px-5 py-2 rounded-xl border border-blue-500 bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-md animate-bounce">
+                  Live Link
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-6">
+          <button
+            onclick="showProjects()"
+            id="view-more-btn"
+            class="px-6 py-3 bg-[#1e293b] text-white font-semibold font-[Hind_Siliguri] rounded-xl shadow-md border border-blue-500 hover:bg-blue-600 hover:scale-105 transition duration-300 ease-in-out">
+            আরও প্রোজেক্ট দেখুন..
+          </button>
+        </div>
+        <div class="text-center mt-6">
+          <button
+            onclick="showlessProjects()"
+            id="Show-Less-btn"
+            class="px-6 py-3 bg-[#1e293b] text-white font-semibold font-[Hind_Siliguri] rounded-xl shadow-md border border-blue-500 hover:bg-blue-600 hover:scale-105 transition duration-300 ease-in-out hidden">
+            কম দেখুন..
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- project part  -->
+
+    <!-- skill section  -->
+    <section id="skill">
+      <div class="container mx-auto px-4">
+        <!-- skill section  -->
+        <h2
+          data-aos="fade-up"
+          class="text-[#2196f3] font-bold text-5xl text-center mt-9 font-[Hind_Siliguri]">
+          আমার <span class="text-white">দক্ষতাসমূহ</span>
+        </h2>
+
+        <div
+          data-aos="fade-up"
+          class="skills grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-blue-600"
+              style="--value: 95"
+              role="progressbar">
+              95%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color/48/html-5--v1.png"
+              alt="HTML"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">HTML</p>
+          </div>
+
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-green-500 animate-spin-slow"
+              style="--value: 87"
+              role="progressbar">
+              87%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color/48/css3.png"
+              alt="CSS"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">CSS</p>
+          </div>
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-yellow-400 animate-spin-slow"
+              style="--value: 75"
+              role="progressbar">
+              75%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color/48/javascript--v1.png"
+              alt="javascript"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">
+              javascript
+            </p>
+          </div>
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-yellow-400 animate-spin-slow"
+              style="--value: 50"
+              role="progressbar">
+              50%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/fluency/50/python.png"
+              alt="python"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">python</p>
+          </div>
+
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-green-500 animate-spin-slow"
+              style="--value: 90"
+              role="progressbar">
+              90%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color/48/bootstrap--v2.png"
+              alt="bootstrap"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">
+              bootstrap
+            </p>
+          </div>
+
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-green-500 animate-spin-slow"
+              style="--value: 80"
+              role="progressbar">
+              80%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color/48/tailwind_css.png"
+              alt="tailwind"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">tailwind</p>
+          </div>
+
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-red-500 animate-spin-slow"
+              style="--value: 10"
+              role="progressbar">
+              10%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+              alt="python"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">react</p>
+          </div>
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-lime-500 animate-spin-slow"
+              style="--value: 70"
+              role="progressbar">
+              70%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color/48/github--v1.png"
+              alt="github"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">github</p>
+          </div>
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-lime-500 animate-spin-slow"
+              style="--value: 70"
+              role="progressbar">
+              70%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color-glass/50/adobe-photoshop.png"
+              alt="photoshop"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">
+              photoshop
+            </p>
+          </div>
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-red-500 animate-spin-slow"
+              style="--value: 1"
+              role="progressbar">
+              1%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color/48/nodejs.png"
+              alt="nodejs"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">nodejs</p>
+          </div>
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-orange-500 animate-spin-slow"
+              style="--value: 30"
+              role="progressbar">
+              30%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/color/48/json--v1.png"
+              alt="json"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">json</p>
+          </div>
+
+          <div
+            class="skill-section flex flex-col bg-[#1e293b] rounded-2xl p-6 shadow-lg items-center justify-center space-y-2 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#263859]">
+            <!-- Radial Progress -->
+            <div
+              class="radial-progress text-lime-500 animate-spin-slow"
+              style="--value: 0"
+              role="progressbar">
+              0%
+            </div>
+            <!-- Skill Icon -->
+            <img
+              src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"
+              alt="mongodb"
+              class="w-12 h-12 transition-transform duration-300 hover:scale-110" />
+            <!-- Skill Name -->
+            <p class="text-center text-sm font-bold text-[#2196f3]">mongodb</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      id="inspect-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+      <div
+        class="bg-[#0B1221] animate-pulse rounded-xl shadow-xl p-6 max-w-md w-full text-center space-y-4">
+        <img
+          src="images/SINIKDHO-GITpng.png"
+          alt=""
+          class="w-20 h-20 rounded-full border-2 border border-red-800 mx-auto" />
+        <h2 class="text-xl font-bold text-red-600">⛔ Access Denied!</h2>
+        <p class="text-white-700 font-[Hind_Siliguri]">
+          Developer Tools চালানো নিষেধ। দয়া করে নিরাপত্তার কথা মাথায় রাখুন।
+        </p>
+        <button
+          onclick="closeModal()"
+          class="bg-red-500 font-[Hind_Siliguri] text-white px-4 py-2 rounded hover:bg-red-600">
+          ঠিক আছে
+        </button>
+      </div>
+    </div>
+
+    <!-- testimonials -->
+    <section id="testimonials" class="bg-[#0B1221] py-12 px-4">
+      <h2
+        class="text-white font-bold text-4xl md:text-5xl text-center font-[Hind_Siliguri] mb-10"
+        data-aos="fade-up">
+        ক্লায়েন্টদের মতামত
+      </h2>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mx-auto px-4">
+        <!-- Review 1 -->
+        <div
+          class="bg-[#1e293b] text-white p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-300"
+          data-aos="fade-up">
+          <p class="text-lg mb-6 font-[Hind_Siliguri] leading-relaxed">
+            "তোমার কনটেন্টগুলো অসাধারণ। দারুণ কাজ করছো ভাই। এগিয়ে যাও।"
+          </p>
+          <div class="flex items-center gap-4">
+            <img
+              src="images/r1.jpg"
+              alt="Eftykhar Rahman"
+              class="w-16 h-16 rounded-full border-2 border-white shadow-md" />
+            <div>
+              <p class="font-bold text-lg">Eftykhar Rahman</p>
+              <p class="text-sm text-gray-300">Full-stack Web Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div
+          class="bg-[#1e293b] text-white p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-300"
+          data-aos="fade-up">
+          <p class="text-lg mb-6 font-[Hind_Siliguri] leading-relaxed">
+            "ওর ডিজাইন সেন্স দুর্দান্ত। প্রজেক্ট ডেলিভারিও টাইমলি।"
+          </p>
+          <div class="flex items-center gap-4">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Reviewer"
+              class="w-16 h-16 rounded-full border-2 border-white shadow-md" />
+            <div>
+              <p class="font-bold text-lg">Md. Rafi</p>
+              <p class="text-sm text-gray-300">UI/UX Designer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div
+          class="bg-[#1e293b] text-white p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-300"
+          data-aos="fade-up">
+          <p class="text-lg mb-6 font-[Hind_Siliguri] leading-relaxed">
+            "স্নিগ্ধ অসাধারণভাবে এগিয়ে যাচ্ছে। যারা কোডিং ভালোবাসো, তারা অবশ্যই
+            ওর পেজ ফলো করতে পারে – দারুণ সব কনটেন্ট শেয়ার করে।"
+          </p>
+          <div class="flex items-center gap-4">
+            <img
+              src="images/r3.jpg"
+              alt="Md Khairul Islam"
+              class="w-16 h-16 rounded-full border-2 border-white shadow-md" />
+            <div>
+              <p class="font-bold text-lg">Md Khairul Islam</p>
+              <p class="text-sm text-gray-300">Search Engine Optimizer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="blog-intro"
+      class="text-white text-center max-w-4xl mx-auto py-10 px-4 font-[Hind_Siliguri]">
+      <h2
+        class="text-white font-bold text-5xl text-center mt-7 font-[Hind_Siliguri]"
+        data-aos="fade-up">
+        আমার লেখা <span class="text-[#2196f3]">ব্লগ</span>
+      </h2>
+      <div class="blog grid grid-cols-1 lg:grid-cols-2 gap-10 mt-9">
+        <div
+          class="text-blog p-3"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <h2 class="text-4xl font-bold mb-4">ব্লগ লেখার গুরুত্ব</h2>
+          <p class="text-lg leading-relaxed mb-6">
+            একজন ডেভেলপার হিসেবে শেখা এবং শেখানো—দুইটাই সমান গুরুত্বপূর্ণ।
+            প্রতিদিন কিছু না কিছু নতুন জিনিস শিখি, আর সেগুলোর রেকর্ড রাখতে এবং
+            অন্যদের সাথে শেয়ার করতে আমি ব্লগ লিখি।
+          </p>
+          <p class="text-lg leading-relaxed mb-6">
+            ব্লগ লেখার মাধ্যমে নিজের শেখাকে আরও গভীর করা যায় এবং ভবিষ্যতে ভুলে
+            গেলে রেফারেন্স হিসেবেও কাজ করে। পাশাপাশি, যারা নতুন শিখছে, তাদের পথ
+            দেখাতেও এটি দারুণ সহায়ক।
+          </p>
+          <p class="text-lg leading-relaxed mb-6">
+            আমার প্রতিটি ব্লগ আমি সহজ ভাষায় ও উদাহরণসহ লেখার চেষ্টা করি যেন
+            নতুনদেরও বুঝতে সুবিধা হয়। ব্লগের বিষয়গুলো মূলত আমি যেসব টপিক নিয়ে
+            কাজ করি বা শিখি, সেগুলোর ওপর ভিত্তি করে।
+          </p>
+          <p class="text-lg leading-relaxed">
+            আমার সব ব্লগ পোস্ট আমি
+            <span class="text-blue-400 font-semibold"
+              >"Code with Sinikdho"</span
+            >
+            নামের ফেসবুক পেজে শেয়ার করি। চাইলে সেখানে ফলো করে নিয়মিত আপডেট পেতে
+            পারো।
+          </p>
+        </div>
+
+        <div
+          class="mockup-browser border-base-300 bg-[#1e293b] p-2 w-full text-[#2196f3]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+          <div class="mockup-browser-toolbar">
+            <div class="input">https://web.facebook.com/CodeWithSinikdho</div>
+          </div>
+
+          <!-- Page Interface -->
+          <div class="border-t border-base-300 p-6 space-y-6">
+            <!-- Page Header -->
+            <div class="flex items-center flex-col gap-4">
+              <img
+                src="images/page.jpg"
+                alt="Logo"
+                class="w-14 h-14 rounded-full border-2 border-amber-50 shadow-md" />
+              <div>
+                <h2 class="text-xl font-bold">Code With Sinikdho</h2>
+                <button class="btn btn-sm bg-blue-500 mt-1">
+                  <a href="https://web.facebook.com/CodeWithSinikdho">Follow</a>
+                </button>
+              </div>
+            </div>
+
+            <!-- Post Section -->
+            <div class="bg-[#f0f2f5] p-4 rounded-lg shadow space-y-2">
+              <div class="flex items-center gap-2">
+                <img src="images/page.jpg" class="w-10 h-10 rounded-full" />
+                <div>
+                  <h3 class="font-semibold text-black text-sm">
+                    Code With Sinikdho
+                  </h3>
+                  <span class="text-xs text-gray-500">2h • 🌐 Public</span>
+                </div>
+              </div>
+              <p class="text-sm mt-2 text-black">
+                ✨ আজ থেকে আমরা একটু একটু করে "জাভা স্ক্রিপ্ট" শিখব 🔥
+              </p>
+              <img
+                src="images\Javascript-1.jpg"
+                alt="Post image"
+                class="rounded-lg mt-2 h-70 w-70" />
+              <div class="flex justify-between mt-3 text-xs text-gray-600">
+                <span>👍 124</span>
+                <span>12 comments • 7 shares</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-9">
+      <h2
+        class="text-white font-bold text-5xl text-center mt-7 font-[Hind_Siliguri]"
+        data-aos="fade-up">
+        আমার কিছু <span class="text-[#2196f3]">কনটেন্ট</span>
+      </h2>
+
+      <div class="max-w-3xl mx-auto px-4 mt-8" data-aos="zoom-in-up">
+        <div class="mockup-browser border border-base-300 bg-white text-black">
+          <div class="mockup-browser-toolbar">
+            <div class="input text-white">
+              https://web.facebook.com/CodeWithSinikdho
+            </div>
+          </div>
+
+          <!-- Video Post Content -->
+          <div class="p-6 space-y-5">
+            <!-- Page Info -->
+            <div class="flex items-center gap-3">
+              <img
+                src="images/page.jpg"
+                alt="Page logo"
+                class="w-10 h-10 rounded-full object-cover" />
+              <div>
+                <h3 class="font-semibold text-sm">Code With Sinikdho</h3>
+                <p class="text-xs text-gray-500">3h • 🌐 Public</p>
+              </div>
+            </div>
+
+            <!-- Post Caption -->
+            <p class="text-sm">
+              <span class="font-semibold">JavaScript Array Methods</span>
+              Explained in Bangla 🇧🇩
+            </p>
+
+            <!-- Video Thumbnail -->
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="images/VIDEO.jpg"
+                alt="Video thumbnail"
+                class="w-full h-auto object-cover" />
+            </div>
+
+            <!-- Like/React Button -->
+            <div class="flex items-center gap-4 text-sm mt-2">
+              <button class="btn btn-sm btn-outline btn-primary">
+                👍 React
+              </button>
+              <span class="text-gray-600">127 people reacted</span>
+            </div>
+
+            <!-- Comment Section -->
+            <div class="space-y-3">
+              <!-- Comment 1 -->
+              <div class="flex gap-2 items-start">
+                <img src="./images/hasnat.jpg" class="w-8 h-8 rounded-full" />
+                <div class="bg-[#f0f2f5] p-3 rounded-lg w-full">
+                  <p class="text-sm font-semibold">Hasnat</p>
+                  <p class="text-sm text-gray-800">
+                    Awesome explanation, bro! Keep going. 🔥
+                  </p>
+                </div>
+              </div>
+
+              <!-- Comment 2 -->
+              <div class="flex gap-2 items-start">
+                <img
+                  src="./images/ShóhÀg.jpg"
+                  alt="User"
+                  class="w-8 h-8 rounded-full border-2-blue-500" />
+                <div class="bg-[#f0f2f5] p-3 rounded-lg w-full">
+                  <p class="text-sm font-semibold">Shóh Àg</p>
+                  <p class="text-sm text-gray-800">
+                    Onk helpful video. Thanks Snigdho bhai! ❤️
+                  </p>
+                </div>
+              </div>
+
+              <!-- Comment Input -->
+              <div class="flex gap-2 items-center mt-2">
+                <img
+                  src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png"
+                  class="w-8 h-8 bg-[#f0f2f5] rounded-full"
+                  alt="User" />
+                <input
+                  type="text"
+                  placeholder="Write a comment..."
+                  class="input bg-transparent input-bordered input-sm w-full rounded-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="github w-full py-9 " class="">
+      <h2
+        class="text-4xl font-bold text-center font-[Hind_Siliguri]"
+        data-aos="zoom-in">
+        গিটহাবে আমি
+      </h2>
+
+      <div
+        class="mx-auto px-4 mt-8 grid grid-cols-1 lg:grid-cols-2 justify-items-center">
+        <!-- GitHub Profile Mockup (Responsive + Dynamic) -->
+        <div
+          class="mockup-phone bg-[#0B1221] mx-auto mt-10 max-w-xs sm:max-w-sm"
+          data-aos="fade-up">
+          <div class="mockup-phone-camera"></div>
+          <div
+            id="githubDisplay"
+            class="mockup-phone-display bg-[#1e293b] text-white p-4 font-[Hind_Siliguri] max-h-[700px]">
+            <div class="text-center text-gray-400">Loading GitHub info...</div>
+          </div>
+        </div>
+
+        <div
+          class="github-text font-[Hind_Siliguri] text-white mt-8"
+          data-aos="fade-up">
+          <p class="border-l-2 rounded-l-2xl p-2">
+            GitHub হলো একটি ভার্সন কন্ট্রোল এবং কোড হোস্টিং প্ল্যাটফর্ম, যা মূলত
+            ডেভেলপারদের জন্য তৈরি। এটি Git প্রযুক্তির উপর ভিত্তি করে কাজ করে,
+            যেখানে একজন ডেভেলপার তার কোড সংরক্ষণ, শেয়ার এবং একসাথে কাজ করার
+            সুযোগ পায়।<br />
+            যখন তুমি একজন প্রোগ্রামার বা ওয়েব ডেভেলপার হিসেবে নিজের প্রজেক্ট
+            তৈরি করো, তখন GitHub-এ সেই প্রজেক্ট গুলো রেখে নিজের স্কিল প্রদর্শন
+            করতে পারো,টিমে কাজ করতে পারো,এমনকি open-source community-তে অবদানও
+            রাখতে পারো। তাই, প্রতিটি ডেভেলপারের উচিত GitHub ব্যবহার করা এবং
+            নিয়মিত আপডেট রাখা।
+          </p>
+
+          <dotlottie-wc
+            src="https://lottie.host/b3f1fc81-ac87-4e48-81e0-53faf5d7dd46/ICTtVEnwFV.lottie"
+            autoplay
+            loop
+            data-aos="fade-up"></dotlottie-wc>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificate" class="bg-[#0B1221] py-12 px-4">
+      <h2
+        class="text-white mt-10 font-bold text-4xl md:text-5xl text-center font-[Hind_Siliguri] mb-10"
+        data-aos="fade-up">
+        সার্টিফিকেট
+      </h2>
+
+      <div class="flex justify-center" data-aos="fade-up">
+        <!-- Certificate Card -->
+        <div
+          class="bg-[#1e293b] text-white p-6 rounded-xl shadow-lg w-full max-w-md hover:scale-[1.02] transition-transform duration-300">
+          <img
+            src="images/certificate.png"
+            alt="Certificate Image"
+            class="rounded-lg mb-4 shadow-md w-full" />
+          <h3 class="text-2xl font-bold mb-2">
+            PROFESSIONAL WEB DESIGN WITH AI (ONLINE)
+          </h3>
+          <p class="text-sm text-gray-300 mb-1">
+            Issued by: <span class="text-white">UY Lab</span>
+          </p>
+          <p class="text-xs text-gray-400">Date: 10 January 2024</p>
+        </div>
+      </div>
+    </section>
+
+    ‍
+    <section id="" class="bg-[#0B1221] mt-[100px]">
+      <h2
+        data-aos="fade-up"
+        class="text-[#2196f3] font-bold text-5xl text-center mt-9 font-[Hind_Siliguri]">
+        যোগাযোগ <span class="text-white">করুন</span>
+      </h2>
+      <div
+        class="flex flex-col md:flex-row items-center w-full justify-center gap-8 p-6 text-white">
+        <!-- Contact Info Side (Optional) -->
+        <div data-aos="fade-up" class="text-left max-w-sm space-y-4">
+          <h3 class="text-2xl font-bold text-[#2196f3]">Contact Me</h3>
+          <p class="text-sm text-gray-300">
+            Feel free to connect with me through social media or drop me an
+            email. I'm open to collaborations, questions, or a friendly hello!
+          </p>
+          <ul class="text-sm text-gray-400 space-y-1">
+            <li><strong>Email:</strong> mdsinikdho94@gmail.com</li>
+            <li><strong>Phone:</strong> +8801903234407</li>
+            <li><strong>Location:</strong> Rangpur, Bangladesh</li>
+          </ul>
+        </div>
+
+        <!-- Mockup Phone -->
+        <div
+          data-aos="fade-up"
+          class="mockup-phone border-info mx-auto w-full max-w-xs sm:max-w-sm">
+          <div class="mockup-phone-camera"></div>
+          <div
+            class="mockup-phone-display p-3 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl bg-[#0f172a] overflow-y-auto max-h-[600px]">
+            <div
+              class="flex flex-col items-center justify-center text-center mt-[100px] p-4 space-y-4 w-full break-words">
+              <!-- Profile Picture -->
+              <img
+                src="images/SINIKDHO-GITpng.png"
+                alt="Profile"
+                class="w-20 h-20 rounded-full shadow-md border-[#013be8d4] border-2" />
+
+              <!-- Name -->
+              <h2 class="text-lg font-bold break-words">Md.Sinikdho</h2>
+
+              <!-- Social Icons -->
+              <div class="flex gap-4 justify-center flex-wrap">
+                <a
+                  href="https://web.facebook.com/Sinikdho12"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-400 text-xl">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a
+                  href="https://github.com/mdsinikdho12"
+                  target="_blank"
+                  class="text-white hover:text-gray-400 text-xl">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/md-ferdousmahmud/"
+                  target="_blank"
+                  class="text-blue-400 hover:text-blue-300 text-xl">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="mailto:mdsinikdho94@gmail.com"
+                  class="text-red-400 hover:text-red-300 text-xl">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-[#0f172a] text-gray-400 font-[Hind_Siliguri] text-center py-6 text-sm">
+      &copy; 2025 <span class="text-white font-semibold">Sinikdho</span> — সকল
+      স্বত্ব সংরক্ষিত। Developed with ❤️ by
+      <a
+        href="https://github.com/sinikdho12"
+        class="text-blue-400 hover:underline"
+        target="_blank"
+        >Sinikdho</a
+      >
+    </footer>
+
+    <!-- ✅ Preloader -->
+    <div
+      id="preloader"
+      class="fixed inset-0 flex items-center justify-center z-50">
+      <dotlottie-player
+        src="https://lottie.host/a2fbc368-91f1-414d-b26d-9793a8d60b35/m7VibKeM9d.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay></dotlottie-player>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTopBtn"
+      class="fixed bottom-5 right-5 bg-[#2196f3] hover:bg-blue-500 text-white px-4 py-2 rounded-s-lg shadow-lg transition hidden duration-300">
+      ↑
+    </button>
+
+    <!-- type.js (cdn) -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Alpine.js for toggle functionality -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer></script>
+    <!-- aso js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.3.0/dist/dotlottie-wc.js"
+      type="module"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"></script>
+    <!-- typed.js init -->
+
+    <script>
+      var typed = new Typed("#typed-text", {
+        strings: [
+          '<span class="text-white">ওয়েবসাইটে আপনাকে ,</span> স্বাগতম',
+          '<span class="text-white">আমি স্নিগ্ধ,</span> একজন ওয়েব ডেভেলপার',
+          '<span class="text-white">আমি স্নিগ্ধ,</span> একজন ফ্রন্টএন্ড ডেভেলপার',
+          '<span class="text-white">আমি স্নিগ্ধ,</span> একজন জাভাস্ক্রিপ্ট ডেভেলপার',
+        ],
+        typeSpeed: 70,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      +AOS.init();
+    </script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
