@@ -20,14 +20,3 @@ This is the official portfolio website of **Sinikdho**, a passionate CSE student
 - JavaScript (Vanilla)
 - Responsive Design Principles
 
-## 🔒 Privacy
-
-This is a **private repository** because the source code of the portfolio is reserved and protected. Unauthorized use or copying is prohibited without permission.
-
-## 📝 License
-
-This project is licensed under a custom personal-use license. See the [LICENSE.txt](./LICENSE.txt) for more information.
-
----
-
-🔗 **Follow Me:**
